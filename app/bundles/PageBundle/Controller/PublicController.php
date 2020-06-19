@@ -650,7 +650,7 @@ class PublicController extends CommonFormController
 
             $lead = $leadModel->getCurrentLead();
 
-            $segments = $leadModel->getLists($lead, false, false);
+            $segments = $leadModel->getLists($lead, true, false);
 
             return new JsonResponse($segments);
 
