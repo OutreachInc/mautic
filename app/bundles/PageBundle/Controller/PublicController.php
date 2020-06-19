@@ -652,7 +652,7 @@ class PublicController extends CommonFormController
 
             $segments = $leadModel->getLists($lead, true, true);
 
-            return new JsonResponse($segments);
+            // return new JsonResponse($segments);
 
             /** @var DeviceTrackingServiceInterface $trackedDevice */
             $trackedDevice = $this->get('mautic.lead.service.device_tracking_service')->getTrackedDevice();
